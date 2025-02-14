@@ -93,7 +93,7 @@ table {
 fieldset {
   border: none;
   background-color: rgb(252, 194, 3);
-  margin-top :10px;
+  margin-top: 10px;
   border-radius: 3px;
 }
 
@@ -146,10 +146,12 @@ legend {
 .button:hover {
   background-color: blueviolet;
 }
+
 .table {
-color: white;
-margin-bottom: 55px;
+  color: white;
+  margin-bottom: 55px;
 }
+
 .button-formulaire {
   background-color: rgb(65, 85, 240);
   border-radius: 15px;
@@ -165,18 +167,39 @@ margin-bottom: 55px;
   box-shadow: none;
   cursor: pointer;
 }
+
 .form {
-width: 50%;
-margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
+
 #film {
   height: 25px;
   width: 200px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   margin-top: 10px;
   border-radius: 3px;
   border: none;
 }
+.button-accueil {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.button-accueil:hover {
+background-color: darkslateblue;
+}
+  
+
+
+
 
 
 
