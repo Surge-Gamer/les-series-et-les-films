@@ -21,10 +21,10 @@ p {
 }
 
 header {
-  background-image: url(images/cinéma.jpg);
+  background-image: url(images/cinema.jpg);
   background-size: cover;
-  background-position: center;
-  height: 500px;
+  background-position: top;
+  height: 650px;
 
 }
 
