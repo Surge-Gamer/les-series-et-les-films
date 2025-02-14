@@ -4,13 +4,14 @@ h1 {
 
 body {
   background-color: rgba(217, 129, 52);
+
   p {
-      font-family: "Lilita One", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: large;
-    }
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
   }
+}
 
 .ma-classe {
   color: blueviolet;
@@ -55,6 +56,7 @@ a:hover {
 
 .box {
   width: 400px;
+
   img {
     max-width: 100%;
     object-fit: cover;
@@ -116,4 +118,29 @@ legend {
       }
     }
   }
+}
+
+.button {
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(65, 85, 240);
+  margin: 20px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.conteneur-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: blueviolet;
 }

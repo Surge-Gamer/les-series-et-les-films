@@ -11,9 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <header class="demo-border">
@@ -21,24 +22,24 @@
   </header>
 
   <div class="conteneur">
-    <div class="box"><img
-        src="images/iron-man-avengers.jpg">
-      
-      </div>
-    <div class="box"><img
-        src="images/predator.jpg">
+    <div class="box"><img src="images/iron-man-avengers.jpg">
+
     </div>
-    <div class="box"><img
-        src="images/the-meg-eat-a-girl.jpg">
+    <div class="box"><img src="images/predator.jpg">
+    </div>
+    <div class="box"><img src="images/the-meg-eat-a-girl.jpg">
     </div>
   </div>
-  <p class="ma-classe">Introduction :</p> <p>Bonjour, ce site va vous présenter des films que je trouve vraiment cool
+  <p class="ma-classe">Introduction :</p>
+  <p>Bonjour, ce site va vous présenter des films que je trouve vraiment cool
     à voir même si'il y en a qui sont un petit peu abusés. Si vous ne les avait pas vu je vous ai mis
     les liens des bandes annoces pour y jeter un coup d'oeil. EN VRAI, J'AIME BEAUCOUP PLUS DE FILM ET SÉRIE QUE CEUX
     LÀ, MAIS JE NE VAIS PAS TOUS LES METTRE, IL Y EN AURAI BEAUCOUP TROP ! Bonne lecture et peut-être bon visonnage !
   </p>
-  <p class="ma-classe-2"><a href="séries.html">Les Séries :</a></p>
-  <p class="ma-classe-2"><a href="films.html">Les Films</a></p>
+  <div class="conteneur-button">
+    <div><a href="séries.html"><button class="button">Série</button></a></div>
+    <div><a href="films.html"><button class="button">Films</button></a></div>
+  </div>
   <section>
     <p>Nous allons voir : </p>
     <ul>
@@ -100,7 +101,7 @@
 
     <form action="" method="get">
       <label for="film">Votre film ou Série préféré --></label>
-      <input type="film" name="film" id="film" required> 
+      <input type="film" name="film" id="film" required>
 
       <legend>Votre genre de film préféré :</legend>
       <fieldset>
@@ -122,38 +123,37 @@
         </div>
       </fieldset>
 
-        <fieldset>
-          <div>
-            <input type="checkbox" id="Romance" name="Romance" />
-            <label for="Romance">Romance</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <input type="checkbox" id="Documentaire" name="Documentaire" />
-            <label for="Documentaire">Documentaire</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <input type="checkbox" id="Aventure" name="Aventure" />
-            <label for="Aventure">Aventure</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <input type="checkbox" id="" name="Animation" />
-            <label for="Animation">Animation</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <input type="checkbox" id="Comedie" name="Comedie" />
-            <label for="Comedie">Comedie</label>
-          </div>
-        </fieldset>
-        <input type="submit" value="Envoyer"
-      </form>
+      <fieldset>
+        <div>
+          <input type="checkbox" id="Romance" name="Romance" />
+          <label for="Romance">Romance</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div>
+          <input type="checkbox" id="Documentaire" name="Documentaire" />
+          <label for="Documentaire">Documentaire</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div>
+          <input type="checkbox" id="Aventure" name="Aventure" />
+          <label for="Aventure">Aventure</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div>
+          <input type="checkbox" id="" name="Animation" />
+          <label for="Animation">Animation</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div>
+          <input type="checkbox" id="Comedie" name="Comedie" />
+          <label for="Comedie">Comedie</label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Envoyer" </form>
 </body>
 
 </html>
