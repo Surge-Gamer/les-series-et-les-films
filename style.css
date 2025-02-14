@@ -144,3 +144,7 @@ legend {
 .button:hover {
   background-color: blueviolet;
 }
+.table {
+color: white;
+margin-bottom: 55px;
+}
