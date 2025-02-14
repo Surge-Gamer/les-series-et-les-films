@@ -163,7 +163,18 @@ margin-bottom: 55px;
   box-shadow: none;
   cursor: pointer;
 }
-
+.form {
+width: 50%;
+margin: 0 auto;
+}
+#film {
+  height: 25px;
+  width: 200px;
+  margin-bottom:10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  border: none;
+}
 
 
 
