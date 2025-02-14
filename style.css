@@ -2,10 +2,15 @@ h1 {
   color: blue;
 }
 
-body{
+body {
   background-color: rgba(217, 129, 52);
-  
-}
+  p {
+      font-family: "Lilita One", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: large;
+    }
+  }
 
 .ma-classe {
   color: blueviolet;
@@ -112,5 +117,3 @@ legend {
     }
   }
 }
-
-
