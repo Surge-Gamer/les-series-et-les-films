@@ -101,46 +101,80 @@
 
 
     <form class="form" action="" method="get">
-      <label for="film">Votre film ou Série préféré : </label><br />
-      <input type="film" name="film" id="film" required>
-
-      <legend>Votre genre de film préféré :</legend>
+      <label for="film">Votre film ou Série préféré :</label><br />
+      <input type="text" name="film" id="film" required>
+    
+      <legend>Genre(s) de film préféré :</legend>
       <fieldset>
         <div>
-          <input type="checkbox" id="Horreur" name="Horreur" />
+          <input type="checkbox" id="Horreur" name="Horreur" value="Horreur" class="inp" />
           <label for="Horreur">Horreur</label>
         </div>
         <div>
-          <input type="checkbox" id="Action" name="Action" />
+          <input type="checkbox" id="Action" name="Action" value="Action" class="inp" />
           <label for="Action">Action</label>
         </div>
         <div>
-          <input type="checkbox" id="Fantastique/Sience Fiction" name="scales" />
-          <label for="Fantastique/Sience Fiction">Fantastique/Sience Fiction</label>
+          <input type="checkbox" id="Fantastique" name="Fantastique" value="Fantastique/Science-Fiction" class="inp" />
+          <label for="Fantastique">Fantastique/Science-Fiction</label>
         </div>
         <div>
-          <input type="checkbox" id="Romance" name="Romance" />
+          <input type="checkbox" id="Romance" name="Romance" value="Romance" class="inp" />
           <label for="Romance">Romance</label>
         </div>
         <div>
-          <input type="checkbox" id="Documentaire" name="Documentaire" />
+          <input type="checkbox" id="Documentaire" name="Documentaire" value="Documentaire" class="inp" />
           <label for="Documentaire">Documentaire</label>
         </div>
         <div>
-          <input type="checkbox" id="Aventure" name="Aventure" />
+          <input type="checkbox" id="Aventure" name="Aventure" value="Aventure" class="inp" />
           <label for="Aventure">Aventure</label>
         </div>
         <div>
-          <input type="checkbox" id="" name="Animation" />
+          <input type="checkbox" id="Animation" name="Animation" value="Animation" class="inp" />
           <label for="Animation">Animation</label>
         </div>
         <div>
-          <input type="checkbox" id="Comedie" name="Comedie" />
-          <label for="Comedie">Comedie</label>
+          <input type="checkbox" id="Comedie" name="Comedie" value="Comédie" class="inp" />
+          <label for="Comedie">Comédie</label>
         </div>
       </fieldset>
-      <button type="submit" class="button-formulaire">Envoyer</button>
+    
+      <button id="mybutton" type="submit" class="button-formulaire">Envoyer</button>
     </form>
+    
 </body>
+
+<script>
+  console.log("Salut les gens !");
+
+  const myButton = document.getElementById("mybutton");
+
+  myButton.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const film = document.getElementById("film").value;
+
+    const genres = [...document.querySelectorAll('.inp:checked')].map(e => e.value);
+
+    if (genres.length === 0) {
+      alert(`Votre film préféré est : ${film}\nAucun genre sélectionné.`);
+    } else {
+      alert(`Votre film préféré est : ${film}\nGenres : ${genres.join(", ")}`);
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
